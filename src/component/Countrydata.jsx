@@ -30,7 +30,7 @@ function Countrydata() {
             {countryDatas.map((country,index) => {
                 return (
                     < Link to={`/countrydetail/${country.name.common}`} key={index} className = "p-4 border rounded-lg shadow-md w-[80%] sm:w-[40%] lg:w-[23%]" >
-                    <img src={country.flags.svg} alt={country.name.common} className="w-full h-40 object-cover"></img>
+                    <img src={country.flags.svg} alt={country.name.common} className="w-full h-40 object-contain"></img>
                     <h1 className="text-center mt-1 font-medium">{country.name.common}</h1>
                 </Link>
                 )
